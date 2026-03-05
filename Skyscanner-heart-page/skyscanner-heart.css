@@ -1,0 +1,114 @@
+* {
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(78, 78, 79);
+    opacity: 1.0;
+}
+
+.image img {
+    height: 100px;
+    width: 180px;
+    margin-top:-20px;
+}
+
+.Skyscanner-contioner {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 10px;
+    height: 560px;
+    margin: 20px 5px 20px 350px;
+}
+
+.cross-icon {
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    margin-left: 470px;
+    font-size: 30px;
+}
+
+.image {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 300px;
+    background: cover, fixed, no-repeat;
+    margin-left: 10px;
+}
+
+.Login-heading-pragraf {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 470px;
+    margin-left: 30px;
+    margin-top: 5px;
+    line-height: 21px;
+}
+
+p {
+    font-size: 19.7px;
+}
+
+/* p{
+    font-size: 18px;
+} */
+h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    /* margin-right: 200px; */
+}
+
+h3 {
+    margin-right: 90px;
+}
+
+button {
+    color: black;
+    background-color: #E0E4E9;
+    width: 440px;
+    height: 40px;
+    border: none;
+    box-sizing: border-box, content-box;
+    margin: 10px 5px 5px 30px;
+    border-radius: 10px;
+    line-height: 15px;
+    font-size: 19px;
+    box-shadow: inset;
+    padding-left: 170px;
+    display: flex;
+}
+
+button:hover {
+    background-color: #bdbdbd;
+}
+
+input[type="checkbox"] {
+    border: 3px solid rgb(0, 134, 245);
+    margin-left: 30px;
+    height: 15px;
+    width: 20px;
+}
+
+span {
+    color: #a1a1a1;
+    margin-left: 30px;
+    font-size: 16.2px;
+}
+
+a {
+    color: #303030;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button img {
+    width: 30px;
+    height: 20px;
+    background: cover;
+    margin-top: 11px;
+}

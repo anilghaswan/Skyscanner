@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sky scanner</title>
+    <link rel="stylesheet" href="skyscanner.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <style>
+      #btn {
+        background-color: transparent;
+        color: #f1f1f1;
+        height: 30px;
+        width: 100px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+
+      #btn i {
+        margin-left: 15px;
+      }
+
+      #box {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: +1;
+        height: 150px;
+        width: 250px;
+        border-radius: 10px;
+        margin-left: 20px;
+        display: none;
+        color: rgb(33, 33, 79);
+        line-height: 40px;
+        font-size: 17px;
+        text-decoration: none;
+        padding: 20px 0px 0px 30px;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+
+      .div-hotel-threetin {
+        background-color: brown;
+        height: 550px;
+        width: 1263px;
+        margin-left: 10px;
+
+      }
+
+      .div-hotel-threeetin-two h5 {
+        color: black;
+        font-size: 18px;
+        /* line-height: 1.0; */
+        margin-left: 10px;
+        margin-top: 10px;
+
+      }
+
+
+      #choaching {
+        height: 100px;
+        width: 620px;
+        margin-top: -20px;
+        padding-bottom: 2px;
+        color: black;
+        box-sizing: content-box;
+        /* padding-left: 20px; */
+        display: none;
+        margin-left: 10px;
+        background-color: rgb(255, 255, 255);
+      }
+
+      #arrow {
+        font-size: 18px;
+        /* text-align: center; */
+        display: inline-block;
+        transition: 0.2s;
+        margin-left: 495px;
+        position: absolute;
+        margin-top: -50px;
+        color: #000000;
+      }
+
+      hr {
+        width: 500px;
+        margin-left: 10px;
+        margin-top: -25px;
+      }
+
+
+      .images img {
+        height: 80px;
+        width: 200px;
+
+      }
+
+      .fa-xmark {
+        font-size: 20px;
+      }
+
+      #Skyscannercontioner {
+        background-color: rgb(255, 255, 255);
+        width: 480px;
+        border-radius: 10px;
+        height: 550px;
+        margin: 20px 5px 30px 350px;
+        position: absolute;
+        z-index: +3;
+        display: none;
+      }
+
+
+      #crossicon {
+        background-color: rgb(255, 255, 255);
+        height: 20px;
+        width: 20px;
+        margin-top: 20px;
+        /* font-size: 100px; */
+        margin-left: 450px;
+      }
+
+      .images {
+        background-color: rgb(255, 255, 255);
+        height: 70px;
+        width: 260px;
+        background: cover, fixed, no-repeat;
+        margin-left: 10px;
+        margin-top: -30px;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      .Login-heading-pragraf h1 {
+        margin-top: 2px;
+        margin-left: 30px;
+
+      }
+
+
+      .Skyscanner-contioner button h3 {
+        margin-right: 100px;
+      }
+
+      h1 {
+        font-weight: bolder;
+        font-size: 35px;
+      }
+
+      #button-login h3 {
+        margin-right: 60px;
+      }
+
+      #button-logins-1 {
+        color: black;
+        background-color: #E0E4E9;
+        width: 440px;
+        height: 42px;
+        border: none;
+        letter-spacing: 0.2px;
+        line-height: 1.2;
+        box-sizing: border-box;
+        margin: 10px 5px 5px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 10px 0px 0px 0px;
+      }
+
+      #button-logins {
+        color: black;
+        background-color: #E0E4E9;
+        width: 440px;
+        height: 42px;
+        border: none;
+        letter-spacing: 0.2px;
+        line-height: 1.2;
+        box-sizing: border-box;
+        margin: 10px 5px 5px 20px;
+        border-radius: 5px;
+        /* line-height: 15px; */
+        font-size: 19px;
+        padding: 10px 0px 0px 160px;
+        display: flex;
+      }
+
+      #button-logins:hover {
+        background-color: #bdbdbd;
+      }
+
+      input[type="checkbox"] {
+        border: 3px solid rgb(0, 134, 245);
+        margin-left: 20px;
+        height: 15px;
+        width: 20px;
+      }
+
+      .login-span {
+        color: #a1a1a1;
+        margin-left: 20px;
+        font-size: 15px;
+      }
+
+      a {
+        color: #fff;
+      }
+
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      #button-logins img {
+        width: 30px;
+        height: 28px;
+        background: cover;
+        margin-top: 0px;
+      }
+  </style>
+
+  <body>
+    <!-- ./.... -->
+    <div id="Skyscannercontioner">
+      <div id="crossicon" onclick="delet()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="images">
+        <img src="D:\download__5_-removebg-preview.png" ; />
+      </div>
+      <div class="Login-heading-pragraf">
+        <h1>Get the full experience</h1>
+        <p class="login-pra">
+          Track prices, make trip planning easier and enjoy faster
+          <br />booking.
+        </p>
+      </div>
+      <button id="button-logins-1">Continue width email</button>
+      <button id="button-logins">
+        <img src="D:\download__7_-removebg-preview (1).png" />
+        Facebook
+      </button>
+      <button id="button-logins">
+        <img
+          src="c:\Users\SILVER TECH EXPERT\Downloads\download__6_-removebg-preview.png"
+        />
+        Google
+      </button>
+      <button id="button-logins">
+        <img src="" />
+        Apple
+      </button>
+      <br />
+      <input type="checkbox" />Remember me
+      <br />
+      <br />
+      <span class="login-span"
+        >By continuing you agree to our Terms of Service and
+        privacy Police.</span
+      >
+    </div>
+    <script>
+    </script>
+
+    <div class="contioner">
+      <div class="header">
+        <div class="header-logo">
+          <img src="./images/skyscanner logo.png" />
+        </div>
+        <div class="header-menu">
+          <div class="header-menu-help">
+            <a
+              href="./Skyscanner-help-page/skyscanner-help.html"
+              >Help</a
+            >
+          </div>
+          <div class="header-menu-icon">
+            <a
+              href="./Skyscanner-globel-page/sky scanner-globel.html"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+          </div>
+          <div class="header-menu-icon">
+            <a
+              href="./Skyscanner-heart-page/skyscanner-heart.html"
+              ><i class="fa-solid fa-heart"></i
+            ></a>
+          </div>
+          <button id="login-btn" onclick="delet()"><i class="fa-solid fa-user"></i>Login</button>
+       
+          <script>
+        let login = document.getElementById("login-btn");
+      let Skyscannercontioner = document.getElementById("Skyscannercontioner");
+
+      function delet() {
+        if (
+          Skyscannercontioner.style.display === "none" ||
+          Skyscannercontioner.style.display === ""
+        ) {
+          Skyscannercontioner.style.display = "block";
+        } else {
+          Skyscannercontioner.style.display = "none";
+        }
+      }
+          </script>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <button class="btn-first">
+          <i class="fa-solid fa-plane"></i>Flight
+        </button>
+        <button class="btn-header">
+          <i class="fa-solid fa-hotel"></i>hotels
+        </button>
+        <button class="btn-header"><a href="./Skyscannercarhair-page/sky scanner-carhair.html">
+          <i class="fa-solid fa-car"></i>car hir,</a>
+        </button>
+      </div>
+      <div class="header_tageline">
+        <h2>Millions of cheap flights. One simple search.</h2>
+      </div>
+      <button id="btn" onclick="Return()">
+        Return <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <div id="box">
+        <div class="Boxes"><i class="fa-solid fa-arrow-right"></i>on Way</div>
+        <div class="Boxes">
+          <i class="fa-solid fa-arrows-rotate"></i> Return
+        </div>
+        <div class="Boxes"><i class="fa-solid fa-rotate"></i>multi city</div>
+      </div>
+      <div class="header_box">
+        <div class="box-round"><span>from</span><br />Jaipur (JAI)</div>
+        <div class="box-icon"><i class="fa-solid fa-right-left"></i></div>
+        <div class="box-simple-first">
+          <span>TO</span><br />Country, city or airpor
+        </div>
+        <div class="box-simple-second"><span>Depar</span><br />Add date</div>
+        <div class="box-simple-second"><span>Return</span><br />Add date</div>
+        <div class="box-round-second">
+          <span>Travells and cabin claim...</span><br />1 Adult ,Economy
+        </div>
+        <button class="sign-in">Search</button>
+      </div>
+      <div class="check_box-div">
+        <div class="check_box">
+          <input type="checkbox" />Add nearbuy airport
+          <br />
+          <br />
+          <input type="checkbox" />Direct flights
+        </div>
+        <div class="check_box">
+          <input type="checkbox" />Add nearbuy airport
+        </div>
+        <div class="check_box-third">
+          <input type="checkbox" />find hotels for your date
+        </div>
+      </div>
+    </div>
+    <!-- min start -->
+    <div class="main">
+      <div class="main-box">
+        <div class="main-box_first">
+          <div class="main-box_first-div">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+          <div class="main-box_second-div">Hospital</div>
+        </div>
+        <div class="main-box_first">
+          <div class="main-box_first-div"><i class="fa-solid fa-car"></i></div>
+          <div class="main-box_second-div">car hair</div>
+        </div>
+        <div class="main-box_first">
+          <div class="main-box_first-div">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="main-box_second-div">Explore Every Wery</div>
+        </div>
+      </div>
+      <div class="main-image">
+        <img src="D:\Screenshot 2025-11-28 101549.png" />
+      </div>
+      <h3>Start planning your adventure</h3>
+      <div class="btn-div">
+        <button class="div_btn-first">City</button>
+        <button class="div_btn">airport</button>
+        <button class="div_btn">Region</button>
+        <button class="div_btn">Countery</button>
+      </div>
+      <div class="Link_div">
+        <div class="link">Book hotels in Chennai</div>
+        <div class="link">Hotels in Bengaluru</div>
+        <div class="link">Hotels in Dubai</div>
+        <div class="link">Book hotels deals in Phuket</div>
+        <div class="link">Cheap hotels deals in Ahmedabad</div>
+        <div class="link">Hotels deals in Jaipur</div>
+        <div class="link">Book hotels in Ho Chi Minh City</div>
+        <div class="link">Cheap hotels in Kuala Lumpur</div>
+        <div class="link">Book hotels in Guwahati</div>
+      </div>
+      </div>
+
+      <footer>
+        <input type="text" placeholder="india.English(uk).$INR" />
+        <div class="footer_link-divmain">
+          <div class="footer_link-div">
+            <a href="">Help</a><br />
+            <a href="">Privacy Setting</a><br />
+            <a href="">Login</a><br />
+          </div>
+          <div class="footer_link-div">
+            <a href="">Cookie Policy</a><br />
+            <a href="">Privacy Policy</a><br />
+            <a href="">Terms of service</a><br />
+            <a href="">Company Details</a><br />
+          </div>
+          <div class="footer_link-div">
+            <select>
+              <option>Explore</option>
+              <option>Flightes</option>
+            </select>
+            <select>
+              <option>Compant</option>
+            </select>
+            <select>
+              <option>Partenes</option>
+            </select>
+            <select>
+              <option>Trips</option>
+            </select>
+            <select>
+              <option>International Sites</option>
+            </select>
+          </div>
+        </div>
+        <div class="fotter-box">
+          Cheap flight booking from anywhere, to everywhere <br />
+          <p>© Skyscanner Ltd 2002 - 2025</p>
+          <p></p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      let btn = document.getElementById("btn");
+      let box = document.getElementById("box");
+
+      function Return() {
+        if (box.style.display === "none" || box.style.display === "") {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+  </html>

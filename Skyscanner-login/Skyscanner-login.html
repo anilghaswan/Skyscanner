@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyscanner-login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="skyscanner-login.css" />
+  </head>
+
+  <body>
+    <div id="Skyscannercontioner">
+      <div id="crossicon" onclick="delet()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="image"><img src="../images/skyscanner logo-2.png" ; /></div>
+      <div class="Login-heading-pragraf">
+        <h1>Get the full experience</h1>
+        <p>
+          Track prices, make trip planning easier and enjoy faster
+          <br />booking.
+        </p>
+      </div>
+      <button id="button-login">
+        <h3>Continue width email</h3>
+      </button>
+      <button id="button-login">
+        <img src="D:\download__7_-removebg-preview (1).png" />
+        <h2>Facebook</h2>
+      </button>
+      <button id="button-login">
+        <img
+          src="c:\Users\SILVER TECH EXPERT\Downloads\download__6_-removebg-preview.png"
+        />
+        <h2>Google</h2>
+      </button>
+      <button id="button-login">
+        <img src="" />
+        <h2>Apple</h2>
+      </button>
+      <br />
+      <input type="checkbox" />Remember me
+      <br />
+      <br />
+      <span
+        >By continuing you agree to our <a href="">Terms of Service</a> and
+        <a href="">privacy Police.</a></span
+      >
+    </div>
+    <script>
+      let crossicon = document.getElementById("crossicon");
+      let Skyscannercontioner = document.getElementById("Skyscannercontioner");
+
+      function delet() {
+        if (
+          Skyscannercontioner.style.display === "block" ||
+          Skyscannercontioner.style.display === ""
+        ) {
+          Skyscannercontioner.style.display = "none";
+        } else {
+          Skyscannercontioner.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="sky scanner-globel.css">
+</head>
+<body>
+      <div id="contioner">
+     <div id="heading">Regional Seeting</div>
+      <div id="crossicon" onclick="delet()"><i class="fa-solid fa-xmark"></i></div>
+      <div class="box-first"> <div class="icon"><i class="fa-solid fa-message"></i><span>Language</span></div>
+      </div>
+   <button>English(United Kingdom)</button>
+   <br>
+  <div class="box-first"><div class="icon"> <i class="fa-solid fa-globe"></i><span>Countery/Region</span></div> 
+</div>
+<p>Selecting the country you are in will give you local deals and information.</p>
+  <button class="btn_india">India</button>
+  <br>
+    <div class="box-first"><div class="icon"><i class="fa-solid fa-dollar-sign"></i><span>Curriency</span></div> </div>
+<button class="btn_Inr" >INR-$</button>
+<button class="save">save</button>
+<button class="cancle">Cancle</button>
+<br>
+  </div>
+  <script>
+      let crossicon= document.getElementById("crossicon")
+    let contioner= document.getElementById("contioner")
+
+    function delet(){
+      if(contioner.style.display==="block"||contioner.style.display===""){
+        contioner.style.display="none"
+      }
+      else{
+         contioner.style.display="block"
+      }
+    }
+  </script>
+</body>
+</html>
